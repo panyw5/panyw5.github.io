@@ -2,13 +2,9 @@
 <html>
 <head>
 	<title>Yiwen Pan</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<style type="text/css">
-		#navbar-home a {
-			color: #fff;
-		}
-	</style>
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -16,15 +12,39 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="load.js"></script>
+	
+
+	<link rel="stylesheet" href="/research.css">
+	<style type="text/css">
+		#navbar-home a {
+			color: #fff;
+		}
+		.cover-container {
+			background-image: url("/assets/images/cover.jpg");
+		}
+	</style>
 </head>
 
 <body>
 	<div id="navbar"></div>
 
 
+	<div class="cover-container">
+	  <img src="assets/images/cover.jpg" style="width:100%">
+	</div>
 	<div class="container">
-	  <!-- Content here -->
-
+		<main role="main">
+			<section class="jumbotron text-center">
+			  <div class="container">
+			    <h1 class="jumbotron-heading">Me</h1>
+			    <p class="lead text-muted">Currently working as faculty at <a href="http://spe.sysu.edu.cn/" class="text-primary">School of physics</a> at Sun Yat-sen University</p>
+			    <p>
+			      <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
+			      <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+			    </p>
+			  </div>
+			</section>
+		</main>
 	</div>
 </body>
 </html>

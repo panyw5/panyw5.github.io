@@ -1,6 +1,3 @@
-#navbar-research a {
-  color: #fff;
-}
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -33,7 +30,4 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
-}
-#navbar-research {
-  color:white;
 }
