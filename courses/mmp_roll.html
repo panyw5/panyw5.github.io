@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+  <title>点名</title>
+
+  <meta content="text/html; charset=UTF-8" http-equiv=Content-Type><meta name=viewport content="width=device-width, initial-scale=1">
+
+  <meta property="fb:page_id" content="176909722351736" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="/load.js"></script>
+
+  <link rel="stylesheet" href="/research.css">
+  <link rel="stylesheet" href="courses.css">
+</head>
+
+<style type="text/css">
+  .button {
+    background: #eee;
+    padding: 10px;
+    width:100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+  }
+  .button:hover{
+    background: #ddd;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .button:active{
+    background: #eee;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #picked {
+    background: #248729;
+    color:#fff;
+    text-align: center;
+    font-size: 80px;
+    display:inline-block;
+    width:350px;
+    min-height: 120px;
+  }
+  #name-picker{
+    text-align: center;
+  }
+</style>
+
+<script type="text/javascript">
+
+
+  var names = decodeURIComponent("%E7%8E%8B%E6%B5%A9%E7%84%B6%2C%E6%9B%BE%E6%99%93%E8%8E%B9%2C%E9%82%93%E5%85%86%E6%B0%91%2C%E6%A2%81%E9%A7%BF%E8%B1%AA%2C%E5%88%98%E6%96%B0%E9%BE%99%2C%E7%BD%97%E9%B9%8F%E9%A3%9E%2C%E9%BE%99%E6%B6%9B%2C%E7%8E%8B%E6%9C%9D%E6%B0%91%2C%E5%91%A8%E8%88%AA%2C%E5%AD%99%E5%B2%B8%E6%9D%BE%2C%E5%90%B4%E8%8B%A5%E6%98%95%2C%E6%9D%8E%E7%BA%AA%E8%B6%85%2C%E6%A2%81%E4%BB%BB%E8%88%AA%2C%E9%80%84%E4%B9%A6%E6%B6%B5%2C%E5%AD%99%E4%BC%A0%E6%98%8A%2C%E5%AD%99%E4%BA%9A%E5%A4%AB%2C%E7%8E%8B%E5%BF%97%E9%B9%8F%2C%E8%A2%81%E5%8D%9A%2C%E5%B7%B4%E5%AE%87%E9%94%8B%2C%E8%94%A1%E5%BD%A6%E5%8D%9A%2C%E8%94%A1%E4%B8%8E%E9%9B%A8%2C%E6%9B%BE%E6%B5%A9%E9%BE%99%2C%E6%9B%BE%E5%81%A5%E5%AE%89%2C%E6%9B%BE%E9%94%A6%E6%9D%B0%2C%E9%99%88%E5%AE%B6%E7%91%9C%2C%E9%99%88%E7%91%9E%E7%A5%A5%2C%E9%99%88%E4%BC%9F%E5%81%A5%2C%E9%99%88%E7%A6%A7%E9%BE%99%2C%E9%99%88%E7%85%9C%E9%92%A6%2C%E9%99%88%E6%A2%93%E8%B1%AA%2C%E9%99%88%E9%81%B5%E8%89%BA%2C%E9%82%93%E5%AE%87%E8%BD%A9%2C%E9%82%93%E5%BF%A0%E6%99%97%2C%E4%B8%81%E5%AE%87%E9%BE%99%2C%E6%9D%9C%E6%B5%A0%E5%B0%94%2C%E9%AB%98%E5%98%89%E4%BF%8A%2C%E9%BE%9A%E6%98%A5%E6%B1%9F%2C%E9%BE%9A%E9%94%90%E6%B4%8B%2C%E4%BD%95%E5%9B%BD%E5%8B%A4%2C%E4%BD%95%E8%BF%9B%2C%E9%BB%84%E6%B5%B7%E6%B6%9B%2C%E9%BB%84%E6%B6%9B%2C%E9%BB%84%E4%BE%9D%E9%98%B3%2C%E8%92%8B%E5%BD%AC%2C%E8%92%8B%E6%B0%B4%E5%A8%87%2C%E9%87%91%E7%92%90%E8%88%AA%2C%E5%8A%B3%E5%AD%90%E5%81%A5%2C%E9%9B%B7%E5%90%AF%E5%B8%85%2C%E9%9B%B7%E8%87%AA%E5%8A%9B%2C%E9%BB%8E%E5%B1%B1%E6%9C%88%2C%E6%9D%8E%E6%96%8C%E8%83%BD%2C%E6%9D%8E%E6%99%A8%E9%98%B3%2C%E6%9D%8E%E6%98%8A%E6%B4%8B%2C%E6%9D%8E%E6%B5%A9%E9%92%A6%2C%E6%9D%8E%E5%BA%86%E7%8E%89%2C%E6%9D%8E%E9%94%B6%E9%98%B3%2C%E6%9D%8E%E4%BC%9F%E6%BA%90%2C%E6%9D%8E%E7%91%B6%2C%E6%9D%8E%E8%8E%B9%2C%E6%9D%8E%E8%87%B4%2C%E6%A2%81%E7%BA%AA%E6%81%92%2C%E6%A2%81%E5%B1%95%E5%8D%8E%2C%E5%BB%96%E9%94%90%E9%9F%AC%2C%E6%9E%97%E6%99%8B%E7%BA%AC%2C%E6%9E%97%E8%BF%9C%E5%BD%AC%2C%E5%88%98%E5%AE%B6%E7%8F%B2%2C%E5%88%98%E5%80%A9%E6%98%8E%2C%E5%88%98%E8%8B%8F%E6%9D%AD%2C%E9%BE%99%E6%98%8E%E5%BF%97%2C%E9%BE%99%E9%9C%84%E8%88%AA%2C%E5%8D%A2%E5%98%89%E6%9E%97%2C%E7%BD%97%E9%B8%A3%E5%AE%87%2C%E7%BD%97%E6%A3%8B%E7%85%9C%2C%E7%BD%97%E5%AE%87%E7%BF%94%2C%E7%BD%97%E7%85%9C%E8%90%8C%2C%E9%AA%86%E5%8A%B2%2C%E9%A9%AC%E6%AC%A3%E6%9C%88%2C%E8%8E%AB%E7%81%BF%2C%E8%8E%AB%E6%B5%A9%E6%98%8C%2C%E5%AE%81%E4%BA%91%E6%9D%BE%2C%E9%92%B1%E9%B9%8F%E5%8D%87%2C%E4%BB%BB%E8%95%BE%2C%E5%94%90%E7%94%9F%2C%E7%8E%8B%E5%8D%9A%2C%E7%8E%8B%E6%89%BF%E5%BE%90%2C%E7%8E%8B%E5%86%A0%E6%B6%A6%2C%E7%8E%8B%E7%AB%9E%E5%8D%93%2C%E7%8E%8B%E7%90%A6%2C%E7%8E%8B%E6%99%B0%E5%AE%81%2C%E7%8E%8B%E8%AF%A3%E8%BD%A9%2C%E7%8E%8B%E9%92%B2%E6%89%AC%2C%E7%8E%8B%E5%AD%90%E6%9D%B0%2C%E8%82%96%E6%B4%BD%E8%8D%A3%2C%E8%82%96%E5%A4%A9%E7%90%A6%2C%E5%BE%90%E5%84%92%2C%E5%BE%90%E7%BB%B4%E6%9E%AB%2C%E8%AE%B8%E5%A4%8F%E8%BF%9C%2C%E7%84%89%E5%8A%9B%E6%81%92%2C%E6%9D%A8%E5%85%89%E6%98%AD%2C%E6%9D%A8%E7%A7%80%E7%8F%8D%2C%E6%9D%A8%E5%AD%90%E7%A5%A5%2C%E5%8F%B6%E6%98%B1%E8%BE%89%2C%E5%BA%94%E6%82%A6%2C%E4%BA%8E%E4%BD%B0%E5%A3%AE%2C%E4%BD%99%E8%AF%9A%E4%BF%A1%2C%E4%BD%99%E4%B9%94%E6%99%BA%2C%E8%A2%81%E6%BA%AA%E5%90%9B%2C%E8%A2%81%E6%A2%93%E9%94%8B%2C%E5%BC%A0%E5%AE%B6%E6%98%9F%2C%E5%BC%A0%E5%87%AF%E7%9D%BF%2C%E5%BC%A0%E7%AB%8B%E7%82%9C%2C%E5%BC%A0%E9%98%B3%2C%E5%BC%A0%E4%B8%80%E5%B8%86%2C%E8%B5%B5%E5%93%B2%E6%99%9F%2C%E8%B5%B5%E5%AD%90%E6%BF%A0%2C%E9%83%91%E5%98%89%E4%B9%90%2C%E4%BB%B2%E8%B0%8B%2C%E5%91%A8%E7%90%A8%E6%9D%B0%2C%E9%83%AD%E7%80%9A%E4%B8%AD");
+  var othernames = "长门有希,凉宫春日,阿虚,蕾姆,拉姆,御坂美琴,最后之作,一方通行,鲁路修,cc,02,白井黑子,阿卡林,初音未来,古美门,两仪式,黑桐干也,Saber,三笠,艾伦,阿尔敏,埃尔文,利威尔,鹿目圆,沙耶加,晓美焰";
+  names = names + othernames;
+  var namelist = names.split(",");
+  
+  function pick() {
+    num = namelist.length;
+    picked_num = Math.floor(Math.random()*num);
+    document.getElementById("picked").innerHTML = namelist[picked_num];
+    namelist.splice(picked_num,1);
+    console.log(num);
+  }
+</script>
+
+<body>
+  <div id="navbar"></div>
+
+  <div class="container" style="padding:20px">
+    <div id="name-picker">
+      <div id="picked">
+        无可奉告
+      </div>
+
+      <div style="text-align: center;margin-top:20px">
+        <div onclick="pick()" class="button">苟</div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+
+</html>
