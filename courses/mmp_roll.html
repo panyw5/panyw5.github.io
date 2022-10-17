@@ -84,9 +84,9 @@
     document.getElementById("picked").classList.add("changed");
     setTimeout(function(){
       document.getElementById("picked").classList.remove("changed")
-      document.getElementById("picked").innerHTML = namelist[picked_num - 1];
+      document.getElementById("picked").innerHTML = namelist[picked_num];
     },500);
-    namelist.splice(picked_num,1);
+//     namelist.splice(picked_num,1);
     console.log(namelist.length);
     console.log(picked_num);
   }
