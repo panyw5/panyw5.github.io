@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+  <title>点名</title>
+
+  <meta content="text/html; charset=UTF-8" http-equiv=Content-Type><meta name=viewport content="width=device-width, initial-scale=1">
+
+  <meta property="fb:page_id" content="176909722351736" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="/load.js"></script>
+
+  <link rel="stylesheet" href="/research.css">
+  <link rel="stylesheet" href="courses.css">
+</head>
+
+<style type="text/css">
+  .button {
+    background: #eee;
+    padding: 10px;
+    width:200px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+  }
+  .button:hover{
+    background: #ddd;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .button:active{
+    background: #eee;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #picked {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background: #248729;
+    color:#fff;
+    text-align: center;
+    font-size: 80px;
+    display:inline-block;
+    min-width:350px;
+  }
+  #picked.changed{
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background:#000;
+  }
+  #name-picker{
+    text-align: center;
+  }
+</style>
+
+<script type="text/javascript">
+
+
+  var names = decodeURIComponent('%E9%BB%84%E4%BE%9D%E9%98%B3,%E5%8F%B2%E8%80%BF%E7%A1%95,%E9%99%88%E7%81%BF%E4%B8%9C,%E9%99%88%E4%BF%8A%E5%B1%B9,%E9%99%88%E7%9B%88,%E7%A8%8B%E6%8C%AF%E6%BA%90,%E4%B8%81%E6%B5%A9%E5%AE%87,%E8%8C%83%E5%AE%87%E6%BD%87,%E8%91%9B%E6%81%92%E5%B2%A9,%E9%9F%A9%E5%9B%BD%E5%BA%86,%E9%87%91%E6%B4%AA%E7%9D%BF,%E9%87%91%E7%91%9E,%E6%9D%8E%E6%99%A8%E6%98%8A,%E6%9D%8E%E5%90%AF%E5%AE%89,%E6%9D%8E%E6%87%BF%E5%BA%AD,%E5%BB%96%E5%A5%95%E6%B8%85,%E5%BB%96%E5%AE%87%E7%A8%8B,%E5%88%98%E6%B5%A9%E6%98%8E,%E5%88%98%E4%BD%B3%E5%9F%8E,%E5%88%98%E5%BB%BA%E4%B9%A6,%E5%88%98%E8%8A%B7%E7%8E%AE,%E7%BD%97%E7%BF%94,%E9%AA%86%E9%95%87%E6%B4%8B,%E8%8E%AB%E6%99%A8,%E8%A3%B4%E6%B0%B8%E5%8D%93,%E4%BB%BB%E5%8D%8E%E5%8D%8E,%E6%B2%88%E4%B8%80%E9%B8%A3,%E7%9F%B3%E6%A2%93%E7%9D%BF,%E8%8B%8F%E9%87%91%E7%9F%B3,%E8%B0%AD%E6%A2%93%E6%B5%A9,%E9%9F%A6%E9%83%AD,%E8%82%96%E7%92%90,%E8%B0%A2%E6%80%9D%E6%80%A1,%E8%AE%B8%E5%93%B2%E9%94%AE,%E6%9D%A8%E6%96%B9%E7%8F%A9,%E6%9D%A8%E4%B9%8B%E4%B9%90,%E5%A7%9A%E6%80%9D%E5%93%B2,%E5%85%83%E7%A7%8B%E5%AE%87,%E8%A2%81%E9%B9%B0,%E8%A9%B9%E6%B7%9E%E6%84%89,%E5%BC%A0%E5%BE%B7%E6%85%A7,%E5%BC%A0%E4%BF%8A%E6%B6%B5,%E5%BC%A0%E8%8B%A5%E6%BB%A2,%E5%BC%A0%E7%BE%BD%E6%89%AC,%E5%BC%A0%E6%BA%90%E6%B6%9B,%E5%BC%A0%E5%AD%90%E6%80%A1,%E9%83%91%E5%AE%87%E9%91%AB,%E5%91%A8%E5%B0%8F%E8%88%9F,%E6%9C%B1%E6%81%92%E7%A5%8E,%E7%A5%9D%E7%9D%BF%E9%B9%8F,%E6%9D%A8%E5%93%B2%E6%96%87,%E6%9B%B9%E5%81%A5%E5%BE%B7,%E6%A2%81%E4%B8%9C%E6%98%8E,%E5%88%98%E5%9C%B3%E6%A5%B7,%E6%96%87%E5%AD%90%E4%BF%AE');
+  var othernames = "御坂美琴,一方通行,鲁路修,两仪式,鹿目圆,晓美焰,美树沙耶子,佐仓杏子,巴麻美,四宫辉夜,藤原千花,阿尼亚";
+  names = names + othernames;
+  var namelist = names.split(",");
+  
+  function pick() {
+    num = namelist.length;
+    picked_num = Math.floor(Math.random()*num);
+    document.getElementById("picked").innerHTML = "——————";
+    document.getElementById("picked").classList.add("changed");
+    setTimeout(function(){
+      document.getElementById("picked").classList.remove("changed")
+      document.getElementById("picked").innerHTML = namelist[picked_num];
+    },500);
+//     namelist.splice(picked_num,1);
+    console.log(namelist.length);
+    console.log(picked_num);
+  }
+</script>
+
+<body>
+  <div id="navbar"></div>
+
+  <div class="container" style="padding:20px">
+    <div id="name-picker">
+      <div id="picked" class="normal">
+        无可奉告
+      </div>
+
+      <div style="text-align: center;margin-top:20px">
+        <div onclick="pick()" class="button">苟 (gò)</div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+
+</html>
