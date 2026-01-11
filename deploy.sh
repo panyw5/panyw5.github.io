@@ -59,6 +59,7 @@ if [ -d "$GROUP_THEORY_SOURCE" ]; then
     echo -e "同步: 群论"
     mkdir -p "$GROUP_THEORY_TARGET"
     rsync -av --delete \
+        --exclude='说课/' \
         --exclude='.DS_Store' \
         --exclude='*.key' \
         --exclude='*.pptx' \
