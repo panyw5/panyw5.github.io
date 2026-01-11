@@ -1,9 +1,11 @@
+# Dependencies
 node_modules
 
-# TeX 源文件
-*.tex
+# macOS
+.DS_Store
 
-# TeX 编译生成的文件
+# TeX files and compilation artifacts
+*.tex
 *.aux
 *.log
 *.out
