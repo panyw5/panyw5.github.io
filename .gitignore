@@ -27,3 +27,6 @@ node_modules
 *.ind
 *.lof
 *.lot
+
+# Markdown slides (edited in separate folder)
+courses/mmp/**/slides.md
