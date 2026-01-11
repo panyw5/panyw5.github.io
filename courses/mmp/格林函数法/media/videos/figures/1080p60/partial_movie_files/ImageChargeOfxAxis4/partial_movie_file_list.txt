@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/figures/1080p60/partial_movie_files/ImageChargeOfxAxis4/188432019_864263774_966547508.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/figures/1080p60/partial_movie_files/ImageChargeOfxAxis4/954888896_697321244_3301347821.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/figures/1080p60/partial_movie_files/ImageChargeOfxAxis4/954888896_145697072_539137499.mp4'

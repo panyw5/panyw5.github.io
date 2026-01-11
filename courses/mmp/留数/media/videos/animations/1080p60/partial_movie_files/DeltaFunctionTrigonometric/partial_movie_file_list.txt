@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/留数/media/videos/animations/1080p60/partial_movie_files/DeltaFunctionTrigonometric/3733076196_3394280725_576627801.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/留数/media/videos/animations/1080p60/partial_movie_files/DeltaFunctionTrigonometric/75791984_4247107814_4209961882.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/留数/media/videos/animations/1080p60/partial_movie_files/DeltaFunctionTrigonometric/75791984_3813024068_4232403435.mp4'

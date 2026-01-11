@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/4069589694_3901100500_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1350057605_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_72797986_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1483178067_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1422487035_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_89190506_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2819181462_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2631460849_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1600616655_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2478440091_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1733944848_1280230420.mp4'

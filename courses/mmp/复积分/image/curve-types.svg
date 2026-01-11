@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="405.90668"
+   height="109.72"
+   viewBox="0 0 405.90668 109.72"
+   sodipodi:docname="curve-types.pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="405.90668"
+       height="109.72"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1">
+    <path
+       id="path1"
+       d="m 23.76726,-71.0328 c 47.22369,23.31297 69.34112,-28.09511 89.80871,13.64704"
+       style="fill:none;stroke:#417505;stroke-width:1.49442;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+    <path
+       id="path2"
+       d="m 68.50696,-71.18416 7.64274,0.93442 -5.50409,5.3842 z"
+       style="fill:#417505;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.0797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+    <path
+       id="path3"
+       d="m 128.37672,-74.6194 c 47.2237,23.31296 69.34113,-28.09512 89.80872,13.64703"
+       style="fill:none;stroke:#d0021b;stroke-width:1.49442;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.68"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+    <path
+       id="path4"
+       d="m 173.11642,-74.77075 7.64274,0.93442 -5.50409,5.38418 z"
+       style="fill:#d0021b;fill-opacity:0.68;fill-rule:nonzero;stroke:#000000;stroke-width:0.0797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+    <path
+       id="path5"
+       d="m 218.18544,-60.97237 c 24.36504,38.35881 -71.87566,5.48156 -62.90915,-28.59124"
+       style="fill:none;stroke:#d0021b;stroke-width:1.49442;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.68"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+    <path
+       id="path6"
+       d="m 186.36256,-46.92468 -4.62306,-6.15712 7.69591,0.23637 z"
+       style="fill:#d0021b;fill-opacity:0.68;fill-rule:nonzero;stroke:#000000;stroke-width:0.0797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+    <path
+       id="path7"
+       d="m 257.63817,-49.61476 c 11.95537,5.97769 65.75451,11.95536 53.79915,0 -11.95537,-11.95537 -11.95537,-17.93304 0,-35.86611 11.95536,-17.93304 -28.83635,-17.23365 -53.79915,0 -24.96282,17.23367 -11.95537,29.88843 0,35.86611 z"
+       style="fill:none;stroke:#417505;stroke-width:1.49442;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+    <path
+       id="path8"
+       d="m 300.34274,-73.75266 2.05632,8.99642 5.35601,-7.50796 -4.5311,3.38337 z"
+       style="fill:#417505;fill-opacity:1;fill-rule:nonzero;stroke:#417505;stroke-width:0.74721;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,-26.269333,-29.16)" />
+  </g>
+</svg>

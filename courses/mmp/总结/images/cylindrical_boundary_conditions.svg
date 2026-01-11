@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <style>
+      .cylinder-outline { fill: none; stroke: #286983; stroke-width: 2; }
+      .cylinder-fill { fill: #e0f0f5; opacity: 0.5; }
+      .cylinder-top { fill: #c8dce6; stroke: #286983; stroke-width: 2; }
+      .axis-line { stroke: #cb8680; stroke-width: 2; stroke-dasharray: 5,3; }
+      .center-point { fill: #cb8680; }
+      .label-text { font-family: 'Times New Roman', serif; font-size: 16px; fill: #575279; }
+      .coord-label { font-family: 'Times New Roman', serif; font-size: 14px; fill: #575279; font-style: italic; }
+      .condition-text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #575279; }
+    </style>
+  </defs>
+  
+  <!-- Left cylinder: m=0 case -->
+  <g id="left-cylinder" transform="translate(200, 120)">
+    <!-- Cylinder body -->
+    <rect x="-80" y="0" width="160" height="180" class="cylinder-fill"/>
+    <line x1="-80" y1="0" x2="-80" y2="180" class="cylinder-outline"/>
+    <line x1="80" y1="0" x2="80" y2="180" class="cylinder-outline"/>
+    
+    <!-- Bottom ellipse -->
+    <ellipse cx="0" cy="180" rx="80" ry="20" class="cylinder-top"/>
+    
+    <!-- Top ellipse -->
+    <ellipse cx="0" cy="0" rx="80" ry="20" class="cylinder-top"/>
+    
+    <!-- Central axis (dashed line) -->
+    <line x1="0" y1="-30" x2="0" y2="210" class="axis-line"/>
+    
+    <!-- Center point at top -->
+    <circle cx="0" cy="0" r="4" class="center-point"/>
+    <text x="15" y="-5" class="coord-label">ρ = 0</text>
+    
+    <!-- Vertical line indicators on surface -->
+    <line x1="-60" y1="0" x2="-60" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="-30" y1="0" x2="-30" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="30" y1="0" x2="30" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="60" y1="0" x2="60" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+  </g>
+  
+  <!-- Left condition text -->
+  <text x="200" y="350" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">m</tspan> = 0
+  </text>
+  <text x="200" y="375" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">R</tspan>(ρ = 0) 有限
+  </text>
+  
+  <!-- Right cylinder: m≠0 case -->
+  <g id="right-cylinder" transform="translate(600, 120)">
+    <!-- Cylinder body -->
+    <rect x="-80" y="0" width="160" height="180" class="cylinder-fill"/>
+    <line x1="-80" y1="0" x2="-80" y2="180" class="cylinder-outline"/>
+    <line x1="80" y1="0" x2="80" y2="180" class="cylinder-outline"/>
+    
+    <!-- Bottom ellipse -->
+    <ellipse cx="0" cy="180" rx="80" ry="20" class="cylinder-top"/>
+    
+    <!-- Top ellipse -->
+    <ellipse cx="0" cy="0" rx="80" ry="20" class="cylinder-top"/>
+    
+    <!-- Central axis (dashed line) with highlight -->
+    <line x1="0" y1="-30" x2="0" y2="210" class="axis-line"/>
+    
+    <!-- Center point at top with highlight -->
+    <circle cx="0" cy="0" r="6" fill="#cb8680" opacity="0.3"/>
+    <circle cx="0" cy="0" r="4" class="center-point"/>
+    <text x="15" y="-5" class="coord-label">ρ = 0</text>
+    
+    <!-- Vertical line indicators on surface -->
+    <line x1="-60" y1="0" x2="-60" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="-30" y1="0" x2="-30" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="30" y1="0" x2="30" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+    <line x1="60" y1="0" x2="60" y2="180" stroke="#99c1d0" stroke-width="1" stroke-dasharray="5,3"/>
+  </g>
+  
+  <!-- Right condition text -->
+  <text x="600" y="350" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">m</tspan> ≠ 0
+  </text>
+  <text x="600" y="375" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">R</tspan>(ρ = 0) = 0
+  </text>
+</svg>

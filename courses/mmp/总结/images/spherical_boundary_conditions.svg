@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      .sphere-outline { fill: none; stroke: #286983; stroke-width: 2; }
+      .sphere-fill { fill: #e0f0f5; opacity: 0.3; }
+      .meridian-front { fill: none; stroke: #99c1d0; stroke-width: 1.5; stroke-dasharray: 5,3; }
+      .meridian-back { fill: none; stroke: #99c1d0; stroke-width: 1; stroke-dasharray: 5,3; }
+      .equator-front { fill: none; stroke: #99c1d0; stroke-width: 1; stroke-dasharray: 5,3; }
+      .equator-back { fill: none; stroke: #286983; stroke-width: 1.5; }
+      .pole-point { fill: #cb8680; }
+      .pole-label { font-family: 'Times New Roman', serif; font-size: 16px; fill: #575279; }
+      .angle-label { font-family: 'Times New Roman', serif; font-size: 14px; fill: #575279; font-style: italic; }
+      .condition-text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #575279; }
+    </style>
+  </defs>
+  
+  <!-- Left sphere: m=0 case -->
+  <g id="left-sphere" transform="translate(200, 150)">
+    <!-- Sphere background -->
+    <circle cx="0" cy="0" r="100" class="sphere-fill"/>
+    
+    <!-- Back meridians (dashed, lighter) - behind the sphere -->
+    <path d="M -30,0 Q -30,-100 0,-100 Q 30,-100 30,0" class="meridian-back"/>
+    <path d="M -60,0 Q -60,-80 0,-100 Q 60,-80 60,0" class="meridian-back"/>
+    
+    <!-- Back equator (dashed, lighter) - behind the sphere -->
+    <path d="M -100,0 A 100,20 0 0,0 100,0" class="equator-back"/>
+    
+    <!-- Sphere outline -->
+    <circle cx="0" cy="0" r="100" class="sphere-outline"/>
+    
+    <!-- Front meridians (solid, darker) - in front of sphere -->
+    <path d="M -30,0 Q -30,100 0,100 Q 30,100 30,0" class="meridian-front"/>
+    <path d="M -60,0 Q -60,80 0,100 Q 60,80 60,0" class="meridian-front"/>
+    
+    <!-- Front equator (solid, darker) - in front of sphere -->
+    <path d="M -100,0 A 100,20 0 0,1 100,0" class="equator-front"/>
+    
+    <!-- North pole (θ=0) -->
+    <circle cx="0" cy="-100" r="4" class="pole-point"/>
+    <text x="-50" y="-105" class="pole-label">北极</text>
+    <text x="15" y="-110" class="angle-label">θ = 0</text>
+    
+    <!-- South pole (θ=π) -->
+    <circle cx="0" cy="100" r="4" class="pole-point"/>
+    <text x="-50" y="115" class="pole-label">南极</text>
+    <text x="15" y="120" class="angle-label">θ = π</text>
+  </g>
+  
+  <!-- Left condition text -->
+  <text x="200" y="310" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">m</tspan> = 0
+  </text>
+  <text x="200" y="335" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">H</tspan>(θ = 0) = <tspan style="font-style: italic;">H</tspan>(θ = π) 有限
+  </text>
+  
+  <!-- Right sphere: m≠0 case -->
+  <g id="right-sphere" transform="translate(600, 150)">
+    <!-- Sphere background -->
+    <circle cx="0" cy="0" r="100" class="sphere-fill"/>
+    
+    <!-- Back meridians (dashed, lighter) - behind the sphere -->
+    <path d="M -30,0 Q -30,-100 0,-100 Q 30,-100 30,0" class="meridian-back"/>
+    <path d="M -60,0 Q -60,-80 0,-100 Q 60,-80 60,0" class="meridian-back"/>
+    
+    <!-- Back equator (dashed, lighter) - behind the sphere -->
+    <path d="M -100,0 A 100,20 0 0,0 100,0" class="equator-back"/>
+    
+    <!-- Sphere outline -->
+    <circle cx="0" cy="0" r="100" class="sphere-outline"/>
+    
+    <!-- Front meridians (solid, darker) - in front of sphere -->
+    <path d="M -30,0 Q -30,100 0,100 Q 30,100 30,0" class="meridian-front"/>
+    <path d="M -60,0 Q -60,80 0,100 Q 60,80 60,0" class="meridian-front"/>
+    
+    <!-- Front equator (solid, darker) - in front of sphere -->
+    <path d="M -100,0 A 100,20 0 0,1 100,0" class="equator-front"/>
+    
+    <!-- North pole (θ=0) with highlight -->
+    <circle cx="0" cy="-100" r="6" fill="#cb8680" opacity="0.3"/>
+    <circle cx="0" cy="-100" r="4" class="pole-point"/>
+    <text x="-50" y="-105" class="pole-label">北极</text>
+    <text x="15" y="-110" class="angle-label">θ = 0</text>
+    
+    <!-- South pole (θ=π) with highlight -->
+    <circle cx="0" cy="100" r="6" fill="#cb8680" opacity="0.3"/>
+    <circle cx="0" cy="100" r="4" class="pole-point"/>
+    <text x="-50" y="115" class="pole-label">南极</text>
+    <text x="15" y="120" class="angle-label">θ = π</text>
+  </g>
+  
+  <!-- Right condition text -->
+  <text x="600" y="310" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">m</tspan> ≠ 0
+  </text>
+  <text x="600" y="335" text-anchor="middle" class="condition-text">
+    <tspan style="font-style: italic;">H</tspan>(θ = 0) = <tspan style="font-style: italic;">H</tspan>(θ = π) = 0
+  </text>
+</svg>

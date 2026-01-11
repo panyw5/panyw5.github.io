@@ -1,0 +1,27 @@
+node_modules
+
+# TeX 源文件
+*.tex
+
+# TeX 编译生成的文件
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.dvi
+*.ps
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot

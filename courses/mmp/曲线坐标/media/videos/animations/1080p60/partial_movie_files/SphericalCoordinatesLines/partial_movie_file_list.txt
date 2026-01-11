@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SphericalCoordinatesLines/3287839541_3467822883_1506226222.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SphericalCoordinatesLines/1534949292_1704288432_3702429096.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SphericalCoordinatesLines/1534949292_66111383_3423633887.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SphericalCoordinatesLines/1534949292_2414297112_1928103307.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SphericalCoordinatesLines/1534949292_66111383_1820541624.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SphericalCoordinatesLines/1534949292_2172633409_1906119591.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SphericalCoordinatesLines/1534949292_66111383_43221380.mp4'

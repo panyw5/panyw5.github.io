@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="267.44"
+   height="152.42667"
+   viewBox="0 0 267.44 152.42667"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g1">
+    <path
+       id="path1"
+       d="M 31.56204,-66.05313 H 227.89833 V -179.6287 H 31.56204 Z"
+       style="fill:none;stroke:#000000;stroke-width:0.74721;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,-36.922667,-87.573333)" />
+    <path
+       id="path2"
+       d="M 55.47269,-96.68864 H 173.5315 V -179.6287 H 55.47269 Z"
+       style="fill:#ffd801;fill-opacity:0.5;fill-rule:nonzero;stroke:#000000;stroke-width:0.74721;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,-36.922667,-87.573333)" />
+    <path
+       id="path3"
+       d="m 132.06146,-138.15868 c 0,22.90191 18.56812,41.47004 41.47004,41.47004 22.90191,0 41.47001,-18.56813 41.47001,-41.47004 0,-22.90192 -18.5681,-41.47002 -41.47001,-41.47002 -22.90192,0 -41.47004,18.5681 -41.47004,41.47002 z"
+       style="fill:#4a90e2;fill-opacity:0.5;fill-rule:nonzero;stroke:#000000;stroke-width:0.74721;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,-36.922667,-87.573333)" />
+    <text
+       id="text3"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,8.6466667,15.858667)"><tspan
+         id="tspan3"
+         style="font-variant:normal;font-weight:300;font-size:10.5px;font-family:'Songti SC';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">点</tspan></text>
+    <text
+       id="text4"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,40.528,56.482667)"><tspan
+         id="tspan4"
+         style="font-variant:normal;font-weight:300;font-size:10.5px;font-family:'Songti SC';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">聚</tspan></text>
+    <text
+       id="text5"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,99.308,101.59467)"><tspan
+         id="tspan5"
+         style="font-variant:normal;font-weight:300;font-size:10.5px;font-family:'Songti SC';writing-mode:lr-tb;fill:#806b00;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">内</tspan></text>
+    <text
+       id="text6"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,161.07733,101.35733)"><tspan
+         id="tspan6"
+         style="font-variant:normal;font-weight:300;font-size:10.5px;font-family:'Songti SC';writing-mode:lr-tb;fill:#005280;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">边</tspan></text>
+    <text
+       id="text7"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,198.936,101.53867)"><tspan
+         id="tspan7"
+         style="font-variant:normal;font-weight:300;font-size:10.5px;font-family:'Songti SC';writing-mode:lr-tb;fill:#005280;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         y="0">孤立点</tspan></text>
+  </g>
+</svg>

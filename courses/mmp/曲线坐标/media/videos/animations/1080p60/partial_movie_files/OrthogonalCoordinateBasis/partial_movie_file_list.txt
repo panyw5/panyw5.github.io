@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/962571549_3240204930_3133429286.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_3395512827_1933390704.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_2304249630_302548514.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_3901352677_3720015824.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_2304249630_2717740727.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_3117243293_1499610901.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_2304249630_3603102677.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_1959855592_256871042.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_2304249630_2994966215.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_270093980_3066667445.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_635919589_2438412491.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/OrthogonalCoordinateBasis/3716021559_2304249630_3846175246.mp4'

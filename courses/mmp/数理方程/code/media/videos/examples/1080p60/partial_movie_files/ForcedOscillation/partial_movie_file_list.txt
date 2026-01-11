@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/465402239_3261510245_1387344536.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/819529597_2670293507_395119911.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/819529597_346352132_819082006.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/819529597_3199593709_3345109822.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/819529597_346352132_1927021398.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/819529597_2064368829_2485757760.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/819529597_346352132_1209178709.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/数理方程/code/media/videos/examples/1080p60/partial_movie_files/ForcedOscillation/819529597_1733944848_2143299636.mp4'

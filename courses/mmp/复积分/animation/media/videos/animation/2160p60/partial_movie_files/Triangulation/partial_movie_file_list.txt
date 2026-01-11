@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复积分/animation/media/videos/animation/2160p60/partial_movie_files/Triangulation/4069589694_2404811386_1150410470.mp4'

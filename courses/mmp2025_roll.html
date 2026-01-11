@@ -1,0 +1,471 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+  <title>在线抽奖</title>
+
+  <meta content="text/html; charset=UTF-8" http-equiv=Content-Type><meta name=viewport content="width=device-width, initial-scale=1">
+
+  <meta property="fb:page_id" content="176909722351736" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="/load.js"></script>
+
+  <link rel="stylesheet" href="/research.css">
+  <link rel="stylesheet" href="courses.css">
+</head>
+
+<style type="text/css">
+  body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .lottery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .lottery-title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .wheel-container {
+    position: relative;
+    width: 420px;
+    height: 160px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wheel-container::before,
+  .wheel-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 38px;
+    pointer-events: none;
+    z-index: 20;
+  }
+
+  .wheel-container::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0));
+  }
+
+  .wheel-container::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255,255,255,0.95), rgba(255,255,255,0));
+  }
+
+  .name-display {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    padding: 10px 25px;
+    min-height: 90px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    position:relative;
+    z-index:5;
+    transition: opacity .3s ease, color .4s ease, font-size .4s ease;
+  }
+
+  .rolling-layer {
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+  }
+
+  .rolling-name {
+    position:absolute;
+    left:50%;
+    transform:translate(-50%, 100%);
+    font-size:5rem;
+    font-weight:600;
+    color:#444;
+    opacity:1;
+    white-space:nowrap;
+    animation: rollUp var(--duration) ease-out forwards;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+
+  @keyframes rollUp {
+    0% {
+      transform:translate(-50%, 110%);
+      opacity:1;
+    }
+    90% {
+      opacity:1;
+    }
+    100% {
+      transform:translate(-50%, -160%);
+      opacity:0;
+    }
+  }
+
+  .lottery-button {
+    /* background: linear-gradient(45deg, #667eea, #764ba2); */
+    background-color: #667eea;
+    color:#fff;
+    border:none;
+    padding:14px 48px;
+    font-size:1.8rem;
+    font-weight:600;
+    border-radius:50px;
+    cursor:pointer;
+    box-shadow:0 10px 8px rgba(52, 64, 120, 0.35);
+    transition: all .28s ease;
+    margin-top:42px;
+  }
+
+  .lottery-button:hover {
+    transform: translateY(-4px);
+    box-shadow:0 16px 38px rgba(102,126,234,0.45);
+  }
+
+  .lottery-button:active {
+    transform: translateY(-1px);
+  }
+
+  .lottery-button:disabled {
+    background:#b8b8b8;
+    box-shadow:none;
+    cursor:not-allowed;
+    transform:none;
+  }
+
+  .helper-text {
+    color:#eee;
+    margin-top:18px;
+    font-size:0.95rem;
+    letter-spacing:0.5px;
+  }
+
+  /* 移除旧 history panel 相关样式，新增卡片区域 */
+  .winners-deck { width:100%; max-width:880px; display:flex; flex-wrap:wrap; gap:14px 16px; justify-content:center; margin-top:34px; }
+  .winner-card { position:relative; background:rgba(255,255,255,0.9); padding:10px 18px; border-radius:12px; font-size:1.1rem; font-weight:600; color:#333; box-shadow:0 4px 14px rgba(0,0,0,0.15); display:flex; align-items:center; gap:10px; animation: cardIn .45s ease; }
+  .winner-card .order { background:#667eea; color:#fff; font-size:0.65rem; padding:3px 7px; border-radius:6px; letter-spacing:1px; font-weight:700; box-shadow:0 2px 6px rgba(0,0,0,0.22); }
+  @keyframes cardIn { from { opacity:0; transform:translateY(14px) scale(.92);} to { opacity:1; transform:translateY(0) scale(1);} }
+  .transfer-clone { position:fixed; left:0; top:0; pointer-events:none; z-index:1200; font-size:4rem; font-weight:700; color:#ffce3d; white-space:nowrap; text-shadow:0 4px 10px rgba(0,0,0,0.25); transition: transform .55s cubic-bezier(.23,.78,.24,1), opacity .55s ease; }
+
+  /* 重新设计的平滑中奖者滚入动画：使用更小的回弹幅度与更高帧稳定性 */
+  .winner-name { position:absolute; left:50%; top:50%; transform:translate(-50%,115%); font-size:5rem; font-weight:700; color:#ffce3d; white-space:nowrap; text-shadow:0 4px 10px rgba(0,0,0,0.15); animation: winnerIn 0.7s cubic-bezier(.22,.9,.3,1.08) forwards; will-change: transform; }
+  @keyframes winnerIn { 0% { transform:translate(-50%,115%);} 60% { transform:translate(-50%,-46%);} 78% { transform:translate(-50%,-54%);} 100% { transform:translate(-50%,-50%);} }
+
+  /* 删除静态 canvas 后 z-index 提升 */
+  #fireworksCanvas { position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:9999; }
+  /* 彩带 fallback */
+  .confetti-piece { position:fixed; width:10px; height:14px; background:#fff; top:-20px; left:0; opacity:.9; transform:translateZ(0); will-change: transform, top; }
+</style>
+
+<script type="text/javascript">
+  // 名单初始化
+  var names = decodeURIComponent('%E4%B8%81%E6%B5%A9%E5%AE%87,%E5%BC%A0%E7%8F%89%E8%A1%94,%E6%B4%AA%E5%AD%90%E5%9D%A4,%E9%99%88%E5%AE%B6%E6%98%8A,%E8%91%A3%E5%B3%B0%E6%BA%90,%E9%99%88%E5%88%9B%E5%8D%9A,%E7%8E%8B%E6%96%87%E6%95%8F,%E9%99%88%E6%98%8A%E5%A4%A9,%E9%99%88%E7%9D%BF%E5%96%86,%E6%9D%8E%E8%99%B9%E9%94%90,%E6%9D%8E%E5%A5%95%E9%98%B3,%E6%9D%8E%E7%BF%8A%E6%98%8E,%E6%9D%8E%E9%9B%A8%E6%A1%90,%E5%AD%99%E5%98%89%E8%8A%8A,%E8%B5%B5%E7%80%9A%E6%9E%97,%E5%91%A8%E6%96%87%E6%96%8C,%E9%82%93%E6%A6%86,%E8%83%A1%E5%AD%90%E6%B5%A9,%E7%84%A6%E6%B6%A6%E6%B3%BD,%E6%9D%8E%E6%89%BF%E7%9D%BF,%E6%9D%8E%E4%B9%90%E7%91%B6,%E6%9D%8E%E9%93%AD%E8%BD%A9,%E6%A2%81%E5%B9%BF%E4%BC%9F,%E5%BB%96%E5%AD%90%E5%A2%A8,%E6%9E%97%E5%AD%90%E5%B3%BB,%E7%BD%97%E5%BF%A0%E6%97%BA,%E8%8E%AB%E5%AE%87%E8%BD%A9,%E5%80%AA%E5%8B%87%E6%9D%B0,%E4%BB%BB%E6%81%A9%E6%83%9C,%E8%B0%AD%E6%97%BB%E9%AA%8F,%E7%94%B0%E7%87%83,%E5%90%B4%E4%BC%A0%E6%97%BA,%E5%90%B4%E7%91%9E%E6%99%97,%E5%90%B4%E4%BC%98,%E8%82%96%E4%B9%90%E5%87%AF,%E5%8F%B6%E4%BF%8A%E5%B8%8C,%E6%98%93%E5%AD%90%E5%BA%B7,%E5%B0%B9%E6%9F%AF,%E8%A9%B9%E4%B8%80%E5%B8%86,%E9%83%91%E7%81%8C%E6%98%9F,%E5%91%A8%E6%B2%AB%E6%B6%B5,%E5%91%A8%E4%B8%80%E9%A2%96,%E9%99%88%E6%94%BF%E8%A8%80,%E9%BB%84%E9%9B%A8,%E6%A2%81%E4%BF%A1%E6%88%90,%E6%A2%81%E8%BF%9C%E9%A2%A2,%E4%BD%95%E6%A2%93%E7%9D%BF,%E9%99%86%E7%BE%8E%E5%BD%A4,%E5%8D%A2%E5%A5%95%E6%98%95');
+  var othernames = ",鲁路修"; // 额外加入
+  names = names + othernames;
+  var name_list = names.split(",");
+
+  var isRolling = false;     // 是否正在滚动
+  var historyWinners = [];   // 已抽取人员
+
+  // 移除旧历史面板并改用卡片式追加，新增赢家卡片动画
+  function addWinnerCard(name){
+    const deck = document.getElementById('winnersDeck');
+    const card = document.createElement('div');
+    card.className='winner-card';
+    card.innerHTML = `<span class="order">${historyWinners.length}</span><span>${name}</span>`;
+    deck.appendChild(card);
+  }
+
+  // 启动抽奖
+  function startLottery() {
+    if (isRolling) return;
+    if (name_list.length === 0) { alert('抽奖结束'); return; }
+    isRolling = true;
+    const btn = document.getElementById('lotteryBtn');
+    const nameDisplay = document.getElementById('nameDisplay');
+    const rollingLayer = document.getElementById('rollingLayer');
+    btn.disabled = true; btn.textContent = '苟 ing...'; nameDisplay.style.opacity = '0';
+
+    let rollCount = 0;
+    const totalRolls = 26 + Math.floor(Math.random()*10); // 更快且更多前期帧
+    let interval = 28; // 初始更快
+
+    function spawnRollingName(text) {
+      const el = document.createElement('div');
+      el.className = 'rolling-name';
+      el.textContent = text;
+      const duration = Math.min(Math.max(interval*1.9, 240), 780); // 缩短总体时长
+      el.style.setProperty('--duration', duration + 'ms');
+      rollingLayer.appendChild(el);
+      setTimeout(()=> el.remove(), duration + 40);
+    }
+
+    function rollingStep() {
+      if (rollCount >= totalRolls) { finalize(); return; }
+      const idx = Math.floor(Math.random()*name_list.length);
+      spawnRollingName(name_list[idx]);
+      rollCount++;
+      // 更快的减速区：40% 后减速
+      if (rollCount > totalRolls * 0.4) {
+        interval += 14 + (rollCount - totalRolls*0.4)*1.6; // 迅速拉长间隔
+      }
+      setTimeout(rollingStep, interval);
+    }
+
+    // 修改 finalize => 添加克隆移动动画
+    function finalize() {
+      const winnerIndex = Math.floor(Math.random()*name_list.length);
+      const winner = name_list[winnerIndex];
+      historyWinners.push(winner);
+      name_list.splice(winnerIndex,1);
+      console.log('[lottery] winner selected', winner);
+      safeLaunchFireworks('finalize');
+      const nameDisplay = document.getElementById('nameDisplay');
+      const btn = document.getElementById('lotteryBtn');
+      const rollingLayer = document.getElementById('rollingLayer');
+      const activeRollers = rollingLayer.querySelectorAll('.rolling-name');
+      if (activeRollers.length) {
+        const last = activeRollers[activeRollers.length-1];
+        last.style.transition = 'opacity .18s ease';
+        requestAnimationFrame(()=> { last.style.opacity = '0'; });
+      }
+      setTimeout(()=> {
+        const winnerEl = document.createElement('div');
+        winnerEl.className = 'winner-name';
+        winnerEl.textContent = winner;
+        rollingLayer.appendChild(winnerEl);
+        winnerEl.addEventListener('animationend', () => {
+          // 中央固定显示
+          winnerEl.remove();
+          nameDisplay.textContent = winner;
+          nameDisplay.style.opacity = '1';
+          nameDisplay.style.color = '#ffce3d';
+          nameDisplay.style.fontSize = '4rem';
+          // 克隆元素并做转场到卡片位置
+          requestAnimationFrame(()=>{
+            const rect = nameDisplay.getBoundingClientRect();
+            const clone = document.createElement('div');
+            clone.className='transfer-clone';
+            clone.textContent = winner;
+            clone.style.transform = `translate(${rect.left + rect.width/2}px, ${rect.top + rect.height/2}px) translate(-50%, -50%) scale(1)`;
+            document.body.appendChild(clone);
+            // 先创建卡片（透明）以便计算目标位置
+            addWinnerCard(winner);
+            const deck = document.getElementById('winnersDeck');
+            const lastCard = deck.lastElementChild;
+            const cardRect = lastCard.getBoundingClientRect();
+            // 延迟一帧再飞行
+            requestAnimationFrame(()=>{
+              clone.style.transform = `translate(${cardRect.left + cardRect.width/2}px, ${cardRect.top + cardRect.height/2}px) translate(-50%, -50%) scale(.35)`;
+              clone.style.opacity = '0';
+              setTimeout(()=> { clone.remove(); nameDisplay.style.color='#333'; }, 620);
+            });
+          });
+          btn.disabled = false;
+          btn.textContent = name_list.length ? '再次抽奖' : '抽奖结束';
+          isRolling = false;
+        }, { once:true });
+      }, 90);
+    }
+
+    rollingStep();
+  }
+
+  // 重置（可按需调用）
+  function resetLottery() {
+    name_list = names.split(',');
+    historyWinners = [];
+    const nameDisplay = document.getElementById('nameDisplay');
+    const btn = document.getElementById('lotteryBtn');
+    nameDisplay.textContent = '无可奉告';
+    nameDisplay.style.opacity = '1';
+    nameDisplay.style.color = '#333';
+    btn.textContent = '开始抽奖';
+    btn.disabled = false;
+    isRolling = false;
+    document.getElementById('rollingLayer').innerHTML='';
+    document.getElementById('winnersDeck').innerHTML='';
+  }
+
+  // 键盘快捷键：Space 抽奖；Ctrl+R 重置
+  document.addEventListener('keydown', (e)=> {
+    if (e.code === 'Space') { e.preventDefault(); startLottery(); }
+    if (e.code === 'KeyR' && e.ctrlKey) { e.preventDefault(); resetLottery(); }
+  });
+
+  // ========= 烟花动画逻辑（重构） =========
+  function ensureFireworksCanvas(){
+    let canvas = document.getElementById('fireworksCanvas');
+    if(!canvas){
+      canvas = document.createElement('canvas');
+      canvas.id='fireworksCanvas';
+      canvas.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1000;';
+      document.body.appendChild(canvas);
+      console.debug('[fireworks] canvas created dynamically');
+    }
+    return canvas;
+  }
+
+  function initFireworksIfNeeded(){
+    if (window.__fireworksReady) return; // 已初始化
+    const canvas = ensureFireworksCanvas();
+    const ctx = canvas.getContext('2d');
+    if(!ctx){ console.warn('[fireworks] 2D context not available'); return; }
+    window.__fireworksReady = true;
+    console.debug('[fireworks] init start');
+  let particles = []; let running=false; let fadeTimer=null; let lastEmit=0;
+
+    function resize(){ canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    window.addEventListener('resize', resize); resize();
+
+    const rand=(min,max)=> Math.random()*(max-min)+min;
+    const hsla=(h,s,l,a)=> `hsla(${h},${s}%,${l}%,${a})`;
+
+    function createFirework(x,y){
+      const hueBase = rand(0,360);
+      const sparks = 46 + Math.floor(Math.random()*30); // 更多粒子
+      for(let i=0;i<sparks;i++){
+        const angle = (Math.PI*2)*(i/sparks) + rand(-0.05,0.05);
+        const speed = rand(2.5,6.2); // 更高初速
+        particles.push({
+          x, y,
+          vx: Math.cos(angle)*speed,
+          vy: Math.sin(angle)*speed,
+          alpha:1,
+            decay: rand(0.010,0.022),
+          hue: hueBase + rand(-30,30),
+          radius: rand(2.2,4.2),
+          glow: Math.random()<0.18
+        });
+      }
+      lastEmit = performance.now();
+    }
+
+    function burstRandom(){
+      createFirework(window.innerWidth*0.5 + rand(-220,220), window.innerHeight*0.38 + rand(-140,140));
+    }
+
+    function animate(){
+      if(!running && particles.length===0){ console.debug('[fireworks] stop (no particles)'); return; }
+      running = true;
+      ctx.globalCompositeOperation='destination-out';
+      ctx.fillStyle='rgba(0,0,0,0.32)';
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.globalCompositeOperation='lighter';
+
+      particles.forEach(p=>{
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.03; // 重力
+        p.alpha -= p.decay;
+      });
+      particles = particles.filter(p=>p.alpha>0);
+
+      particles.forEach(p=>{
+        ctx.beginPath();
+        ctx.fillStyle = hsla(p.hue, 88, p.glow?70:58, p.alpha);
+        ctx.arc(p.x,p.y,p.radius,0,Math.PI*2);
+        ctx.fill();
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    window.launchFireworks = function(){
+      initFireworksIfNeeded();
+      console.debug('[fireworks] launch');
+      burstRandom();
+      for(let i=1;i<4;i++) setTimeout(burstRandom, i*120);
+      const extra = 5 + Math.floor(Math.random()*5);
+      for(let i=0;i<extra;i++) setTimeout(burstRandom, 520 + i*240);
+      if(!running) {
+        animate();
+        setTimeout(() => { if(!running) { console.debug('[fireworks] retry animate'); animate(); } }, 40);
+      }
+      setTimeout(() => {
+        if(particles.length===0 && (performance.now() - lastEmit) > 320) {
+          console.warn('[fireworks] no particles detected, fallback to confetti');
+          spawnConfettiFallback();
+        }
+      }, 420);
+      if(fadeTimer) clearTimeout(fadeTimer);
+      fadeTimer = setTimeout(()=>{ running=false; }, 6500);
+    };
+  }
+
+  function safeLaunchFireworks(source){
+    try {
+      if(source) console.log(`[fireworks] trigger from ${source}`);
+      initFireworksIfNeeded();
+      if (typeof window.launchFireworks === 'function') { console.log('[fireworks] launch call'); window.launchFireworks(); }
+      else { console.log('[fireworks] launch deferred'); setTimeout(()=> { if (typeof window.launchFireworks==='function') window.launchFireworks(); else spawnConfettiFallback(); }, 160); }
+    } catch(err){ console.warn('[fireworks] launch failed, fallback to confetti', err); spawnConfettiFallback(); }
+  }
+
+  function spawnConfettiFallback(){
+    for(let i=0;i<40;i++){
+      const el=document.createElement('div');
+      el.className='confetti-piece';
+      const hue=Math.floor(Math.random()*360);
+      el.style.background=`hsl(${hue} 90% 60%)`;
+      el.style.left=Math.random()*100+'vw';
+      const dur= 4+Math.random()*3;
+      const delay=Math.random()*0.3;
+      el.style.transition=`transform ${dur}s linear ${delay}s, top ${dur}s linear ${delay}s, opacity .6s ease ${(dur-0.6)}s`;
+      document.body.appendChild(el);
+      requestAnimationFrame(()=>{
+        el.style.top='110vh';
+        el.style.transform=`translateY(${80+Math.random()*40}vh) rotate(${Math.random()*720}deg)`;
+        setTimeout(()=> el.remove(), (dur+1)*1000);
+      });
+    }
+  }
+
+  // F 键快速测试烟花
+  document.addEventListener('keydown', e=>{ if(e.code==='KeyF'){ console.log('[fireworks] manual F trigger'); safeLaunchFireworks('manual-key'); }});
+</script>
+
+<body>
+  <!-- 移除静态 <canvas id="fireworksCanvas"></canvas>，改为动态创建 -->
+  <div id="navbar"></div>
+  <div class="lottery-container">
+    <div class="wheel-container">
+      <div class="rolling-layer" id="rollingLayer"></div>
+      <div class="name-display" id="nameDisplay">无可奉告</div>
+    </div>
+    <button class="lottery-button" id="lotteryBtn" onclick="startLottery()">开始抽奖</button>
+    <div class="winners-deck" id="winnersDeck"></div>
+  </div>
+</body>
+
+</html>

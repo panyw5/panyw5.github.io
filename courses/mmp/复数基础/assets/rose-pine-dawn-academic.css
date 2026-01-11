@@ -1,0 +1,509 @@
+/* @theme rose-pine-dawn-academic */
+/*
+Academic Rosé Pine Dawn theme - 学术风格增强版本
+Based on Rosé Pine theme by RAINBOWFLESH
+Enhanced with academic presentation focus, refined typography, and scholarly aesthetics
+*/
+
+@import "default";
+@import "schema";
+@import "structure";
+
+:root {
+    --base: #faf4ed;
+    --surface: #fffaf3;
+    --overlay: #f2e9e1;
+    --muted: #9893a5;
+    --subtle: #797593;
+    --text: #575279;
+    --love: #b4637a;
+    --gold: #ea9d34;
+    --rose: #d7827e;
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --highlight-low: #f4ede8;
+    --highlight-muted: #dfdad9;
+    --highlight-high: #cecacd;
+
+    /* Academic design variables */
+    --academic-primary: #2c3e50;
+    --academic-secondary: #34495e;
+    --academic-accent: #3498db;
+    --academic-success: #27ae60;
+    --academic-warning: #f39c12;
+    --academic-danger: #e74c3c;
+    --academic-border: #bdc3c7;
+    --academic-shadow: rgba(44, 62, 80, 0.1);
+    --paper-texture: rgba(255, 255, 255, 0.95);
+
+    font-family: 'Crimson Text', 'Charter', 'Georgia', 'Times New Roman', serif;
+    font-weight: 400;
+    background: linear-gradient(135deg, var(--base) 0%, var(--surface) 100%);
+    line-height: 1.8;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Academic Typography Hierarchy */
+h1 {
+    color: var(--academic-primary);
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    text-align: center;
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background: var(--academic-accent);
+}
+
+h2 {
+    color: var(--academic-primary);
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+    margin: 32px 0 24px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--academic-border);
+    letter-spacing: -0.005em;
+}
+
+h3 {
+    color: var(--academic-secondary);
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+    margin: 24px 0 16px 0;
+    letter-spacing: normal;
+}
+
+h4 {
+    color: var(--academic-secondary);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0 12px 0;
+}
+
+h5, h6 {
+    color: var(--text);
+    font-weight: 600;
+    margin: 16px 0 8px 0;
+}
+
+/* Academic Body Text */
+p {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.9;
+    margin-bottom: 20px;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+/* Academic Lists */
+ul {
+    padding-left: 32px;
+    margin-bottom: 24px;
+}
+
+li {
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.8;
+    position: relative;
+}
+
+li::marker {
+    color: var(--academic-accent);
+    font-weight: 600;
+}
+
+ul li, ul li p {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Nested lists */
+ul ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+}
+
+ul ul li {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+/* Academic Emphasis */
+strong {
+    color: var(--academic-primary);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--highlight-low), var(--paper-texture));
+    padding: 2px 4px;
+    border-radius: 3px;
+    border-bottom: 1px solid var(--academic-border);
+}
+
+strong svg, ul li strong, ul li strong svg, blockquote ul li strong svg, .proof p strong {
+    color: var(--academic-primary);
+}
+
+em {
+    font-style: italic;
+    color: var(--academic-secondary);
+}
+
+/* Academic Links */
+a {
+    color: var(--academic-accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--academic-primary);
+    border-bottom-color: var(--academic-accent);
+}
+
+/* Academic Code */
+code {
+    color: var(--academic-primary);
+    background: var(--highlight-muted);
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    border: 1px solid var(--academic-border);
+}
+
+marp-pre {
+    background: var(--paper-texture);
+    border: 2px solid var(--academic-border);
+    border-radius: 8px;
+    padding: 24px;
+    margin: 24px 0;
+    box-shadow: 0 2px 8px var(--academic-shadow);
+}
+
+/* Academic Mathematics */
+mjx-container {
+    color: var(--academic-primary);
+    background: var(--paper-texture);
+    padding: 16px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px var(--academic-shadow);
+    border: 1px solid var(--academic-border);
+    margin: 16px 0;
+    font-family: 'Computer Modern', 'Latin Modern Math', serif;
+}
+
+/* Inline math */
+mjx-container[jax="CHTML"][display="true"] {
+    margin: 24px 0;
+    padding: 20px 24px;
+}
+
+/* Academic Quotations */
+blockquote {
+    margin: 32px 0;
+    padding: 24px 32px;
+    background: var(--paper-texture);
+    border-left: 4px solid var(--academic-accent);
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 8px var(--academic-shadow);
+    position: relative;
+    font-style: italic;
+}
+
+blockquote::before {
+    content: '"';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 32px;
+    color: var(--academic-accent);
+    opacity: 0.5;
+    line-height: 1;
+    font-weight: 700;
+}
+
+blockquote p, blockquote p svg, ul li blockquote p, ul li blockquote p svg,
+blockquote ul li, blockquote ul li svg, blockquote ul li p, .proof blockquote p {
+    color: var(--academic-secondary);
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+blockquote strong, ul li blockquote strong, blockquote p strong svg, ul li blockquote p strong svg, blockquote ul li p strong, blockquote ul li p strong svg {
+    color: var(--academic-primary);
+    background: transparent;
+    border: none;
+}
+
+/* Academic Proof and Theorem Boxes */
+.proof, ul .proof {
+    background: linear-gradient(135deg, rgba(39, 174, 96, 0.05), rgba(39, 174, 96, 0.02));
+    padding: 24px 28px;
+    border: 2px solid rgba(39, 174, 96, 0.3);
+    border-radius: 8px;
+    margin: 32px 0;
+    position: relative;
+    box-shadow: 0 2px 8px var(--academic-shadow);
+}
+
+.proof::before {
+    content: 'Proof';
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    background: var(--academic-success);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.proof p {
+    color: var(--academic-primary);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.proof.comment {
+    background: linear-gradient(135deg, rgba(52, 73, 94, 0.05), rgba(52, 73, 94, 0.02));
+    border-color: rgba(52, 73, 94, 0.3);
+}
+
+.proof.comment::before {
+    content: 'Note';
+    background: var(--academic-secondary);
+}
+
+/* Academic Definition Box */
+.definition {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.05), rgba(52, 152, 219, 0.02));
+    padding: 24px 28px;
+    border: 2px solid rgba(52, 152, 219, 0.3);
+    border-radius: 8px;
+    margin: 32px 0;
+    position: relative;
+    box-shadow: 0 2px 8px var(--academic-shadow);
+}
+
+.definition::before {
+    content: 'Definition';
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    background: var(--academic-accent);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Academic Answer System */
+answer {
+    color: var(--base);
+    background: var(--academic-secondary);
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin: 0 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+answer:hover {
+    background: var(--academic-success);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(39, 174, 96, 0.3);
+}
+
+ul li answer svg, ul li blockquote p answer svg {
+    color: var(--base);
+}
+
+/* Academic Tables */
+table {
+    margin: 32px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid var(--academic-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--academic-shadow);
+    background: var(--paper-texture);
+    font-family: sans-serif;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--academic-border);
+    font-size: 18px;
+}
+
+th {
+    background: var(--academic-primary);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background: rgba(189, 195, 199, 0.1);
+}
+
+tr:hover {
+    background: rgba(52, 152, 219, 0.1);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Academic Two Column Layout */
+div.twocols {
+    margin-top: 32px;
+    column-count: 2;
+    column-gap: 48px;
+    column-rule: 1px solid var(--academic-border);
+}
+
+div.twocols p:first-child, div.twocols h1:first-child, div.twocols h2:first-child, 
+div.twocols ul:first-child, div.twocols ul li:first-child, div.twocols ul li p:first-child {
+    margin-top: 0 !important;
+}
+
+div.twocols p.break {
+    break-before: column;
+    margin-top: 0;
+}
+
+/* Academic Color Coding */
+red, red svg, ul li strong red svg, .proof red svg, ul li blockquote p strong red svg {
+    color: var(--academic-danger);
+    font-weight: 600;
+}
+
+green, green svg, ul li strong green svg, .proof green svg, ul li blockquote p strong green svg {
+    color: var(--academic-success);
+    font-weight: 600;
+}
+
+gray, gray svg, ul li strong gray svg, .proof gray svg, ul li blockquote p strong gray svg {
+    color: var(--muted);
+}
+
+orange, orange svg, ul li strong orange svg, .proof orange svg, ul li blockquote p strong orange svg {
+    color: var(--academic-warning);
+    font-weight: 600;
+}
+
+purple, purple svg, ul li strong purple svg, .proof purple svg, ul li blockquote p strong purple svg {
+    color: var(--iris);
+    font-weight: 600;
+}
+
+/* Academic Header and Footer */
+header {
+    color: var(--academic-primary);
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+footer {
+    color: var(--academic-secondary);
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Text Alignment */
+center {
+    text-align: center;
+}
+
+right, blockquote right, .proof.comment right {
+    text-align: right;
+}
+
+/* Academic Figure Captions */
+figcaption {
+    font-style: italic;
+    color: var(--academic-secondary);
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+/* Academic Reference Style */
+.reference {
+    font-size: 16px;
+    color: var(--academic-secondary);
+    font-style: italic;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--academic-border);
+}
+
+/* Global Font Size */
+:root {
+    font-size: 32px;
+}
+
+/* Academic Image Styling */
+img {
+    background: var(--paper-texture);
+    border: 1px solid var(--academic-border);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px var(--academic-shadow);
+    padding: 8px;
+}
+
+/* Academic Section Breaks */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--academic-border), transparent);
+    margin: 32px 0;
+}

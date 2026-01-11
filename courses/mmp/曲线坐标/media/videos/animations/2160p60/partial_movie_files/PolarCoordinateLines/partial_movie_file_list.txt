@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/862178231_822116414_3677946173.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_2263563050_465387675.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_2304249630_1367720569.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_3117243293_1879405850.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_2304249630_1398467519.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_3901352677_482134869.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_2304249630_208949268.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_270093980_4137042096.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_635919589_686532407.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/PolarCoordinateLines/2080717628_2304249630_80079182.mp4'

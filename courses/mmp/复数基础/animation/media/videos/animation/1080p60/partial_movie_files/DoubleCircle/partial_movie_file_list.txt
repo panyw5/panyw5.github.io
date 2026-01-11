@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/1962758005_2833461611_3122156263.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_720412119_3203095958.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_1790679837_1214650625.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_1155090597_800131166.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_3377452644_2164589247.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_1733944848_2288448934.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_3568557750_3279987176.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_269285082_2229363873.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_1894390248_716757839.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_1733944848_1246126720.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/DoubleCircle/2321545495_820270928_301959865.mp4'
