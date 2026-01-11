@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CoordinateSystem/3793175890_123554531_4196484806.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CoordinateSystem/2395962693_2009496496_1328305101.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CoordinateSystem/2395962693_1733944848_2961506367.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CoordinateSystem/2395962693_1192771401_3625969826.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CoordinateSystem/2395962693_1733944848_191767290.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CoordinateSystem/2395962693_3769550850_3546551335.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CoordinateSystem/2395962693_1733944848_1540125600.mp4'

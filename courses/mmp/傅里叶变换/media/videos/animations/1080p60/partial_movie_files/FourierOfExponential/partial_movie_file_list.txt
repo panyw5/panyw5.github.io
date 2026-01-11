@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/傅里叶变换/media/videos/animations/1080p60/partial_movie_files/FourierOfExponential/243274199_3918857478_34062438.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/傅里叶变换/media/videos/animations/1080p60/partial_movie_files/FourierOfExponential/2302794580_1733944848_2875097246.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/傅里叶变换/media/videos/animations/1080p60/partial_movie_files/FourierOfExponential/2302794580_3301628854_670562738.mp4'

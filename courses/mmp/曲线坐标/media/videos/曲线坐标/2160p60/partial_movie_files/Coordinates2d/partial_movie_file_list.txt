@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/曲线坐标/2160p60/partial_movie_files/Coordinates2d/3081877924_2137764059_3309490728.mp4'

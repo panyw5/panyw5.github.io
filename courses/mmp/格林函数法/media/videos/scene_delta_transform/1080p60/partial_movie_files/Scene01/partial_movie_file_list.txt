@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/3733076196_2853476501_223132457.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_4247107814_1822943601.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_3252689321_2873729818.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_4247107814_2634862022.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_4167187297_158459868.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_4247107814_3284806595.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_2169208165_2420296903.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_4247107814_4185917504.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_2944026338_2085456434.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/格林函数法/media/videos/scene_delta_transform/1080p60/partial_movie_files/Scene01/75791984_667144672_3196764103.mp4'

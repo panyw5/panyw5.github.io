@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/1440p60/partial_movie_files/NormOfLegendre/3112093374_4010903197_223132457.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/1440p60/partial_movie_files/NormOfLegendre/4276063517_105204187_3605223728.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/1440p60/partial_movie_files/NormOfLegendre/4276063517_2223975465_2137977934.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/1440p60/partial_movie_files/NormOfLegendre/4276063517_594723902_2013152213.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/球函数/animations/media/videos/animations/1440p60/partial_movie_files/NormOfLegendre/4276063517_1733944848_4199559690.mp4'

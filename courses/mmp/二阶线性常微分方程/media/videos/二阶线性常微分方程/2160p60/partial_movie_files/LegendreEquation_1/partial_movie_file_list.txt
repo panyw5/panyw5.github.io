@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/二阶线性常微分方程/media/videos/二阶线性常微分方程/2160p60/partial_movie_files/LegendreEquation_1/3793175890_957852895_2358810818.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/二阶线性常微分方程/media/videos/二阶线性常微分方程/2160p60/partial_movie_files/LegendreEquation_1/2395962693_4288304099_2358810818.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/二阶线性常微分方程/media/videos/二阶线性常微分方程/2160p60/partial_movie_files/LegendreEquation_1/2395962693_578704762_2358810818.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/二阶线性常微分方程/media/videos/二阶线性常微分方程/2160p60/partial_movie_files/LegendreEquation_1/2395962693_2780668087_2358810818.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/二阶线性常微分方程/media/videos/二阶线性常微分方程/2160p60/partial_movie_files/LegendreEquation_1/2395962693_1733944848_1876788866.mp4'

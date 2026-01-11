@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>球坐标系示意图</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 900px;
+      width: 100%;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #7c3aed;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: #6b7280;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    
+    #canvas {
+      display: block;
+      margin: 0 auto;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      background: #fafafa;
+      position: relative;
+    }
+    
+    .controls {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 220px;
+      z-index: 10;
+    }
+    
+    .control-group {
+      margin-bottom: 15px;
+    }
+    
+    .control-group:last-child {
+      margin-bottom: 0;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #374151;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: #e5e7eb;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #7c3aed;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #7c3aed;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .value-display {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 10px;
+      background: #7c3aed;
+      color: white;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      min-width: 50px;
+      text-align: center;
+    }
+    
+    .legend {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f9fafb;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .legend-title {
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    
+    .legend-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .legend-color {
+      width: 30px;
+      height: 16px;
+      border-radius: 3px;
+      margin-right: 10px;
+      border: 1px solid #d1d5db;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>球坐标系示意图</h1>
+    <div class="subtitle">Spherical Coordinate System: (r, θ, φ)</div>
+    
+    <div style="position: relative;">
+      <canvas id="canvas" width="800" height="600"></canvas>
+      
+      <div class="controls">
+      <div class="control-group">
+        <label>
+          球面半径 r
+          <span class="value-display" id="radiusValue">2.0</span>
+        </label>
+        <input type="range" id="radiusSlider" min="0.5" max="3.5" step="0.1" value="2.0">
+      </div>
+      
+      <div class="control-group">
+        <label>
+          极角 θ (theta)
+          <span class="value-display" id="thetaValue">60°</span>
+        </label>
+        <input type="range" id="thetaSlider" min="0" max="180" step="5" value="60">
+      </div>
+      
+      <div class="control-group">
+        <label>
+          方位角 φ (phi)
+          <span class="value-display" id="phiValue">45°</span>
+        </label>
+        <input type="range" id="phiSlider" min="0" max="360" step="5" value="45">
+      </div>
+      </div>
+    </div>
+    
+    <div class="legend">
+      <div class="legend-title">图例说明</div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: rgba(147, 51, 234, 0.15);"></div>
+        <span>半透明球面</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #ef4444;"></div>
+        <span>示例点 P(r, θ, φ)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #3b82f6;"></div>
+        <span>坐标轴 (x, y, z)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background: #10b981;"></div>
+        <span>角度标记</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    const radiusSlider = document.getElementById('radiusSlider');
+    const thetaSlider = document.getElementById('thetaSlider');
+    const phiSlider = document.getElementById('phiSlider');
+    
+    const radiusValue = document.getElementById('radiusValue');
+    const thetaValue = document.getElementById('thetaValue');
+    const phiValue = document.getElementById('phiValue');
+    
+    // 3D 到 2D 投影参数
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const scale = 80;
+    
+    // 等轴测投影：z 朝上，x 朝右，y 斜着朝下
+    // 使用标准的等轴测角度
+    const isoAngle = Math.atan(1 / Math.sqrt(2));  // 约 35.26 度
+    
+    // 3D 点投影到 2D（等轴测投影）
+    function project3D(x, y, z) {
+      // 等轴测投影公式
+      // x 轴：向右下 30 度
+      // y 轴：向左下 30 度  
+      // z 轴：垂直向上
+      const screenX = (x - y) * Math.cos(Math.PI / 6);  // 30度角
+      const screenY = z - (x + y) * Math.sin(Math.PI / 6);
+      
+      return {
+        x: centerX + screenX * scale,
+        y: centerY - screenY * scale,
+        z: z
+      };
+    }
+    
+    // 绘制坐标轴
+    function drawAxes() {
+      const axisLength = 4;
+      
+      // X 轴 (红色)
+      drawLine3D(0, 0, 0, axisLength, 0, 0, '#ef4444', 2);
+      drawText3D('x', axisLength + 0.3, 0, 0, '#ef4444');
+      
+      // Y 轴 (绿色)
+      drawLine3D(0, 0, 0, 0, axisLength, 0, '#10b981', 2);
+      drawText3D('y', 0, axisLength + 0.3, 0, '#10b981');
+      
+      // Z 轴 (蓝色)
+      drawLine3D(0, 0, 0, 0, 0, axisLength, '#3b82f6', 2);
+      drawText3D('z', 0, 0, axisLength + 0.3, '#3b82f6');
+      
+      // 标注南北极
+      drawText3D('北极', 0, 0, axisLength + 0.8, '#6b7280', 12);
+      drawText3D('南极', 0, 0, -axisLength - 0.5, '#6b7280', 12);
+    }
+    
+    // 绘制 3D 线段
+    function drawLine3D(x1, y1, z1, x2, y2, z2, color, width = 1) {
+      const p1 = project3D(x1, y1, z1);
+      const p2 = project3D(x2, y2, z2);
+      
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width;
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(p2.x, p2.y);
+      ctx.stroke();
+    }
+    
+    // 绘制 3D 文本
+    function drawText3D(text, x, y, z, color, size = 16) {
+      const p = project3D(x, y, z);
+      ctx.fillStyle = color;
+      ctx.font = `${size}px Arial`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(text, p.x, p.y);
+    }
+    
+    // 绘制球面
+    function drawSphere(radius) {
+      const segments = 24;
+      
+      // 绘制经线
+      for (let i = 0; i <= segments; i++) {
+        const phi = (i / segments) * Math.PI * 2;
+        const points = [];
+        
+        for (let j = 0; j <= segments; j++) {
+          const theta = (j / segments) * Math.PI;
+          const x = radius * Math.sin(theta) * Math.cos(phi);
+          const y = radius * Math.sin(theta) * Math.sin(phi);
+          const z = radius * Math.cos(theta);
+          points.push(project3D(x, y, z));
+        }
+        
+        ctx.strokeStyle = 'rgba(147, 51, 234, 0.2)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, points[0].y);
+        for (let j = 1; j < points.length; j++) {
+          ctx.lineTo(points[j].x, points[j].y);
+        }
+        ctx.stroke();
+      }
+      
+      // 绘制纬线
+      for (let j = 1; j < segments; j++) {
+        const theta = (j / segments) * Math.PI;
+        const points = [];
+        
+        for (let i = 0; i <= segments; i++) {
+          const phi = (i / segments) * Math.PI * 2;
+          const x = radius * Math.sin(theta) * Math.cos(phi);
+          const y = radius * Math.sin(theta) * Math.sin(phi);
+          const z = radius * Math.cos(theta);
+          points.push(project3D(x, y, z));
+        }
+        
+        ctx.strokeStyle = 'rgba(147, 51, 234, 0.2)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, points[0].y);
+        for (let i = 1; i < points.length; i++) {
+          ctx.lineTo(points[i].x, points[i].y);
+        }
+        ctx.stroke();
+      }
+    }
+    
+    // 绘制示例点
+    function drawPoint(r, theta, phi) {
+      // 转换为弧度
+      const thetaRad = (theta * Math.PI) / 180;
+      const phiRad = (phi * Math.PI) / 180;
+      
+      // 球坐标转笛卡尔坐标
+      const x = r * Math.sin(thetaRad) * Math.cos(phiRad);
+      const y = r * Math.sin(thetaRad) * Math.sin(phiRad);
+      const z = r * Math.cos(thetaRad);
+      
+      // 绘制从原点到点的线
+      drawLine3D(0, 0, 0, x, y, z, '#ef4444', 2);
+      
+      // 绘制点
+      const p = project3D(x, y, z);
+      ctx.fillStyle = '#ef4444';
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 6, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // 标注点
+      drawText3D('P', x + 0.3, y + 0.3, z + 0.3, '#ef4444', 14);
+      
+      // 绘制投影到 xy 平面
+      drawLine3D(x, y, z, x, y, 0, '#9ca3af', 1);
+      const pXY = project3D(x, y, 0);
+      ctx.fillStyle = '#9ca3af';
+      ctx.beginPath();
+      ctx.arc(pXY.x, pXY.y, 3, 0, Math.PI * 2);
+      ctx.fill();
+      
+      // 绘制 theta 角度弧
+      drawArc3D(0, 0, 0, r * 0.3, thetaRad, phiRad, '#10b981');
+      drawText3D('θ', 
+        r * 0.4 * Math.sin(thetaRad / 2) * Math.cos(phiRad),
+        r * 0.4 * Math.sin(thetaRad / 2) * Math.sin(phiRad),
+        r * 0.4 * Math.cos(thetaRad / 2),
+        '#10b981', 14
+      );
+      
+      // 绘制 phi 角度弧（在 xy 平面）
+      drawPhiArc(r * 0.4, phiRad);
+      const phiLabelR = r * 0.5;
+      drawText3D('φ',
+        phiLabelR * Math.cos(phiRad / 2),
+        phiLabelR * Math.sin(phiRad / 2),
+        0,
+        '#10b981', 14
+      );
+    }
+    
+    // 绘制 theta 角度弧
+    function drawArc3D(cx, cy, cz, radius, theta, phi, color) {
+      const segments = 20;
+      const points = [];
+      
+      for (let i = 0; i <= segments; i++) {
+        const t = (i / segments) * theta;
+        const x = cx + radius * Math.sin(t) * Math.cos(phi);
+        const y = cy + radius * Math.sin(t) * Math.sin(phi);
+        const z = cz + radius * Math.cos(t);
+        points.push(project3D(x, y, z));
+      }
+      
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(points[0].x, points[0].y);
+      for (let i = 1; i < points.length; i++) {
+        ctx.lineTo(points[i].x, points[i].y);
+      }
+      ctx.stroke();
+    }
+    
+    // 绘制 phi 角度弧
+    function drawPhiArc(radius, phi) {
+      const segments = 20;
+      const points = [];
+      
+      for (let i = 0; i <= segments; i++) {
+        const p = (i / segments) * phi;
+        const x = radius * Math.cos(p);
+        const y = radius * Math.sin(p);
+        points.push(project3D(x, y, 0));
+      }
+      
+      ctx.strokeStyle = '#10b981';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(points[0].x, points[0].y);
+      for (let i = 1; i < points.length; i++) {
+        ctx.lineTo(points[i].x, points[i].y);
+      }
+      ctx.stroke();
+    }
+    
+    // 主绘制函数
+    function draw() {
+      // 清空画布
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // 获取当前值
+      const radius = parseFloat(radiusSlider.value);
+      const theta = parseFloat(thetaSlider.value);
+      const phi = parseFloat(phiSlider.value);
+      
+      // 更新显示值
+      radiusValue.textContent = radius.toFixed(1);
+      thetaValue.textContent = theta + '°';
+      phiValue.textContent = phi + '°';
+      
+      // 绘制顺序：先画后面的，再画前面的
+      drawSphere(radius);
+      drawAxes();
+      drawPoint(radius, theta, phi);
+    }
+    
+    // 事件监听
+    radiusSlider.addEventListener('input', draw);
+    thetaSlider.addEventListener('input', draw);
+    phiSlider.addEventListener('input', draw);
+    
+    // 初始绘制
+    draw();
+  </script>
+</body>
+</html>

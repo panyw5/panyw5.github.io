@@ -1,0 +1,387 @@
+/* @theme rose-pine-dawn-enhanced */
+/*
+Enhanced Rosé Pine Dawn theme - 渐进式增强版本
+Based on Rosé Pine theme by RAINBOWFLESH
+Enhanced with improved hierarchy, shadows, and modern aesthetics
+*/
+
+@import "default";
+@import "schema";
+@import "structure";
+
+:root {
+    --base: #faf4ed;
+    --surface: #fffaf3;
+    --overlay: #f2e9e1;
+    --muted: #9893a5;
+    --subtle: #797593;
+    --text: #575279;
+    --love: #b4637a;
+    --gold: #ea9d34;
+    --rose: #d7827e;
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --highlight-low: #f4ede8;
+    --highlight-muted: #dfdad9;
+    --highlight-high: #cecacd;
+
+    /* Enhanced color palette */
+    --shadow-light: rgba(87, 82, 121, 0.08);
+    --shadow-medium: rgba(87, 82, 121, 0.12);
+    --shadow-heavy: rgba(87, 82, 121, 0.16);
+    --accent-glow: rgba(215, 130, 126, 0.15);
+    --text-gradient: linear-gradient(135deg, #575279, #797593);
+
+    font-family: 'Inter', 'SF Pro Display', 'Segoe UI', -apple-system, 
+        BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    background: linear-gradient(135deg, var(--base) 0%, var(--surface) 100%);
+    line-height: 1.6;
+}
+
+/* Enhanced Typography Hierarchy */
+h1 {
+    color: var(--rose);
+    font-size: 52px;
+    font-weight: 700;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 8px var(--shadow-light);
+    background: linear-gradient(135deg, var(--rose), var(--love));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--rose), var(--love));
+    border-radius: 2px;
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+h2 {
+    color: var(--rose);
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 4px var(--shadow-light);
+}
+
+h3 {
+    color: var(--pine);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+h4, h5, h6 {
+    color: var(--iris);
+    font-weight: 600;
+}
+
+/* Enhanced Content Styling */
+p {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Enhanced Lists */
+ul {
+    padding-left: 24px;
+}
+
+li {
+    color: var(--subtle);
+    margin-bottom: 8px;
+    position: relative;
+}
+
+li::marker {
+    color: var(--rose);
+    font-weight: 600;
+}
+
+ul li, ul li p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Enhanced Strong Text */
+strong {
+    color: var(--text);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--highlight-low), var(--highlight-muted));
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px var(--shadow-light);
+}
+
+strong svg, ul li strong, ul li strong svg, blockquote ul li strong svg, .proof p strong {
+    color: #8f6741;
+}
+
+/* Enhanced Links */
+a {
+    color: var(--iris);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--love);
+    text-shadow: 0 1px 4px var(--accent-glow);
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--iris), var(--love));
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Enhanced Code Blocks */
+code {
+    color: var(--text);
+    background: linear-gradient(135deg, var(--highlight-muted), var(--highlight-low));
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 0.9em;
+    box-shadow: 0 1px 3px var(--shadow-light);
+    border: 1px solid var(--highlight-high);
+}
+
+marp-pre {
+    background: linear-gradient(135deg, var(--overlay), var(--highlight-low));
+    border: 1px solid var(--highlight-high);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-medium);
+    padding: 20px;
+}
+
+/* Enhanced Math */
+mjx-container {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.6);
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-light);
+    backdrop-filter: blur(10px);
+}
+
+/* Enhanced Blockquotes */
+blockquote {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, var(--highlight-low), rgba(255, 255, 255, 0.8));
+    border-left: 4px solid var(--iris);
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 12px var(--shadow-light);
+    position: relative;
+}
+
+blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    font-size: 48px;
+    color: var(--iris);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+blockquote p, blockquote p svg, ul li blockquote p, ul li blockquote p svg,
+blockquote ul li, blockquote ul li svg, blockquote ul li p, .proof blockquote p {
+    color: #777;
+    font-style: italic;
+}
+
+blockquote strong, ul li blockquote strong, blockquote p strong svg, ul li blockquote p strong svg, blockquote ul li p strong, blockquote ul li p strong svg {
+    color: #AB886D;
+}
+
+/* Enhanced Proof Boxes */
+.proof, ul .proof {
+    background: linear-gradient(135deg, #dff0d0, #e8f5dc);
+    padding: 24px;
+    border-left: 6px solid #5cb85c;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 16px var(--shadow-medium);
+    margin: 20px 0;
+    position: relative;
+}
+
+.proof::before {
+    content: '💡';
+    position: absolute;
+    top: -8px;
+    right: 16px;
+    background: #5cb85c;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 16px;
+    box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.proof p {
+    color: #555;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.proof.comment {
+    background: linear-gradient(135deg, #f5f5f5, #ececec);
+    border-left-color: var(--muted);
+}
+
+.proof.comment::before {
+    content: '💭';
+    background: var(--muted);
+}
+
+/* Enhanced Answer Hover Effect */
+answer {
+    color: var(--base);
+    background: linear-gradient(135deg, var(--subtle), var(--muted));
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 0 4px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 2px 6px var(--shadow-light);
+}
+
+answer:hover {
+    background: linear-gradient(135deg, #639a2f, #7cb342);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 154, 47, 0.3);
+}
+
+ul li answer svg, ul li blockquote p answer svg {
+    color: var(--base);
+}
+
+/* Enhanced Tables */
+table {
+    margin: 24px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px var(--shadow-medium);
+    background: var(--surface);
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--highlight-high);
+}
+
+th {
+    background: linear-gradient(135deg, var(--rose), var(--love));
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+tr:hover {
+    background: var(--highlight-low);
+    transition: background 0.2s ease;
+}
+
+/* Enhanced Two Column Layout */
+div.twocols {
+    margin-top: 35px;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid var(--highlight-high);
+}
+
+div.twocols p:first-child, div.twocols h1:first-child, div.twocols h2:first-child, 
+div.twocols ul:first-child, div.twocols ul li:first-child, div.twocols ul li p:first-child {
+    margin-top: 0 !important;
+}
+
+div.twocols p.break {
+    break-before: column;
+    margin-top: 0;
+}
+
+/* Color Enhancements */
+red, red svg, ul li strong red svg, .proof red svg, ul li blockquote p strong red svg {
+    color: var(--rose);
+    text-shadow: 0 1px 2px var(--shadow-light);
+}
+
+green, green svg, ul li strong green svg, .proof green svg, ul li blockquote p strong green svg {
+    color: #368f5f;
+    text-shadow: 0 1px 2px var(--shadow-light);
+}
+
+gray, gray svg, ul li strong gray svg, .proof gray svg, ul li blockquote p strong gray svg {
+    color: var(--muted);
+}
+
+orange, orange svg, ul li strong orange svg, .proof orange svg, ul li blockquote p strong orange svg {
+    color: var(--gold);
+    text-shadow: 0 1px 2px var(--shadow-light);
+}
+
+purple, purple svg, ul li strong purple svg, .proof purple svg, ul li blockquote p strong purple svg {
+    color: var(--iris);
+    text-shadow: 0 1px 2px var(--shadow-light);
+}
+
+/* Enhanced Header and Footer */
+header {
+    color: var(--rose);
+    font-weight: 600;
+    text-shadow: 0 1px 2px var(--shadow-light);
+}
+
+footer {
+    color: var(--muted);
+    font-style: italic;
+}
+
+/* Text Alignment */
+center {
+    text-align: center;
+}
+
+right, blockquote right, .proof.comment right {
+    text-align: right;
+}
+
+/* Global Font Size */
+:root {
+    font-size: 32px;
+}

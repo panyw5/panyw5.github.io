@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/2801569836_2357237159_3739529108.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/4088784871_3467822883_2088964309.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/1533080970_3952185628_166981049.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/3846730857_1156561772_82707964.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/1203467921_3467822883_206086519.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/2198620795_2384248756_1924081592.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/3714939578_333163693_3475622165.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/1551281457_1428678375_2833952781.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/2160p60/partial_movie_files/CylindricalCoordinateLines/3183253478_3467822883_3187928306.mp4'

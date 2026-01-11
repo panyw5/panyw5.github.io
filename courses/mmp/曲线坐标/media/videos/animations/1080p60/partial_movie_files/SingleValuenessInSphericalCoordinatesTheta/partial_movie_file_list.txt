@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/2557210470_1807936170_1951015673.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_2141436309_1181122965.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_799789695_484248617.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_65861805_354973121.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_799789695_3195011381.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_3891280061_267051144.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_68432660_647176469.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_2806092236_4206183653.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_1416507727_2033944495.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_755080803_1796961908.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/SingleValuenessInSphericalCoordinatesTheta/1506035531_2111370323_1606365217.mp4'

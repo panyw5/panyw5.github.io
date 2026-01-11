@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/2160p60/partial_movie_files/Exponential_Rep/4069589694_956007100_223132457.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/2160p60/partial_movie_files/Exponential_Rep/2264664312_964684_3579288650.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/2160p60/partial_movie_files/Exponential_Rep/2264664312_1638763016_4144584724.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/2160p60/partial_movie_files/Exponential_Rep/2264664312_1797778789_2390855645.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/2160p60/partial_movie_files/Exponential_Rep/2264664312_502255582_2608795996.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/2160p60/partial_movie_files/Exponential_Rep/2264664312_2447460064_2109779269.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/2160p60/partial_movie_files/Exponential_Rep/2264664312_2816173232_2055757285.mp4'

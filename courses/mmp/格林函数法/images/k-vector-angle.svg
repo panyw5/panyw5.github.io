@@ -1,0 +1,24 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 坐标原点 -->
+  <circle cx="150" cy="100" r="3" fill="#333"/>
+
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4f8d63" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#cb8680" />
+    </marker>
+  </defs>
+
+  <!-- r - r0 矢量 (水平向右，作为参考方向) -->
+  <line x1="150" y1="100" x2="240" y2="100" stroke="#4f8d63" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+
+  <!-- k 矢量 (与 r-r0 成角度 φ) -->
+  <line x1="150" y1="100" x2="210" y2="48" stroke="#cb8680" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+  <!-- 角度 φ 的弧线 -->
+  <path d="M 180 100 A 30 30 0 0 0 171.2 82.4" fill="none" stroke="#B189C6" stroke-width="1.5"/>
+</svg>
+

@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DerivativeOfOrthonormalBasisPolarCoordinates/188432019_1603984075_2163277176.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DerivativeOfOrthonormalBasisPolarCoordinates/954888896_1238684674_3893125684.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DerivativeOfOrthonormalBasisPolarCoordinates/954888896_685727060_1008028936.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DerivativeOfOrthonormalBasisPolarCoordinates/954888896_4058768677_3662619204.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DerivativeOfOrthonormalBasisPolarCoordinates/954888896_1238684674_50184239.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DerivativeOfOrthonormalBasisPolarCoordinates/954888896_233868790_2443072950.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DerivativeOfOrthonormalBasisPolarCoordinates/954888896_1238684674_640496908.mp4'

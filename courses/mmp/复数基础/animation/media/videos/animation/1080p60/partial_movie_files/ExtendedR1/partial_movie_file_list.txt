@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/ExtendedR1/1962758005_412240316_245331824.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/ExtendedR1/2321545495_3231665313_2436373281.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/ExtendedR1/2321545495_1646359618_1363431588.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/ExtendedR1/2321545495_3351314869_3184691495.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/复数基础/animation/media/videos/animation/1080p60/partial_movie_files/ExtendedR1/2321545495_292935578_1972652365.mp4'

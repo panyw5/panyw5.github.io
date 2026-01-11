@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/188432019_123554531_868206503.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_980912114_1934269974.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_1733944848_4024555975.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_3302821906_4289465660.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_1733944848_765901184.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_1304992709_3979740212.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_1733944848_1010832547.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_3586789429_3740921553.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义/曲线坐标/media/videos/animations/1080p60/partial_movie_files/DisplacementAndDerivative/954888896_1733944848_1999341657.mp4'

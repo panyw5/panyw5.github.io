@@ -1,0 +1,280 @@
+/* @theme rose-pine-dawn */
+/*
+Rosé Pine theme create by RAINBOWFLESH
+> www.rosepinetheme.com
+MIT License https://github.com/rainbowflesh/Rose-Pine-For-Marp/blob/master/license
+
+palette in :root
+*/
+
+@import "default";
+@import "schema";
+@import "structure";
+
+:root {
+    --base: #faf4ed;
+    --surface: #fffaf3;
+    --overlay: #f2e9e1;
+    --muted: #9893a5;
+    --subtle: #797593;
+    --text: #575279;
+    --love: #b4637a;
+    --gold: #ea9d34;
+    --rose: #d7827e;
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --highlight-low: #f4ede8;
+    --highlight-muted: #dfdad9;
+    --highlight-high: #cecacd;
+
+    font-family: Pier Sans, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol,
+        "Noto Color Emoji";
+    font-weight: initial;
+
+    background-color: var(--base);
+}
+/* Common style */
+h1 {
+    color: var(--rose);
+    padding-bottom: 2mm;
+    margin-bottom: 12mm;
+}
+
+h2 {
+    color: var(--rose);
+}
+h3 {
+    color: var(--rose);
+}
+h4 {
+    color: var(--rose);
+}
+h5 {
+    color: var(--rose);
+}
+h6 {
+    color: var(--rose);
+}
+a {
+    color: var(--iris);
+}
+p {
+    font-size: 20pt;
+    font-weight: 600;
+    color: var(--text);
+}
+blockquote p {
+    font-weight: 400;
+}
+code {
+    color: var(--text);
+    background-color: var(--highlight-muted);
+}
+text {
+    color: var(--text);
+}
+ul {
+    color: var(--subtle);
+}
+li {
+    color: var(--subtle);
+}
+img {
+    background-color: var(--highlight-low);
+}
+strong {
+    color: var(--text);
+    font-weight: inherit;
+    font-weight: 800;
+}
+mjx-container {
+    color: var(--text);
+}
+marp-pre {
+    background-color: var(--overlay);
+    border-color: var(--highlight-high);
+}
+
+
+/* Code blok */
+.hljs-comment {
+    color: var(--muted);
+}
+.hljs-attr {
+    color: var(--foam);
+}
+.hljs-punctuation {
+    color: var(--subtle);
+}
+.hljs-string {
+    color: var(--gold);
+}
+.hljs-title {
+    color: var(--foam);
+}
+.hljs-keyword {
+    color: var(--pine);
+}
+.hljs-variable {
+    color: var(--text);
+}
+.hljs-literal {
+    color: var(--rose);
+}
+.hljs-type {
+    color: var(--love);
+}
+.hljs-number {
+    color: var(--gold);
+}
+.hljs-built_in {
+    color: var(--love);
+}
+.hljs-params {
+    color: var(--iris);
+}
+.hljs-symbol {
+    color: var(--foam);
+}
+.hljs-meta {
+    color: var(--subtle);
+}
+
+
+:root {
+    font-size: 27px;
+}
+
+/* 以下是自定义的 css */
+
+/* 列表标准字体 */
+ul li, ul li p {
+    font-size: 27px;
+    font-weight: 400;
+    color: #555;
+}
+h1 {
+    font-size:45px
+}
+h1 svg, h3 svg {
+    color: #D7827D
+}
+
+header {
+    color: #D7827D
+}
+footer {
+    color: #ccc
+}
+
+
+/* 标准颜色控制 */
+red, red svg, ul li strong red svg, .proof red svg, ul li blockquote p strong red svg  {
+    color: #D7827D
+}
+green, green svg, ul li strong green svg, .proof green svg, ul li blockquote p strong green svg {
+    color: #368f5f
+}
+
+gray, gray svg, ul li strong gray svg, .proof gray svg, ul li blockquote p strong gray svg  {
+    color: #aaa
+}
+
+purple, purple svg, ul li strong purple svg, .proof purple svg, ul li blockquote p strong purple svg  {
+    color: #B189C6
+}
+
+/* 标准粗体颜色 */
+strong svg, ul li strong, ul li strong svg, blockquote ul li strong svg, .proof p strong {
+    color: #8f6741;
+}
+
+
+/* === 引用 blockquote === */
+/* 引用里的颜色控制 */
+blockquote p strong green, blockquote p strong green svg, blockquote ul li strong green, blockquote ul li strong green svg {
+    color: #61b889
+}
+
+/* 引用的粗体颜色 */
+blockquote strong, ul li blockquote strong, blockquote p strong svg, ul li blockquote p strong svg, blockquote ul li p strong, blockquote ul li p strong svg {
+    color: #AB886D;
+}
+
+blockquote {
+    margin-top: 10px
+}
+
+/* 引用的粗体颜色 */
+blockquote strong, ul li blockquote strong, blockquote p strong svg {
+    color: #AB886D;
+}
+
+blockquote {
+    margin-top: 10px
+}
+blockquote p, blockquote p svg, ul li blockquote p, ul li blockquote p svg,
+blockquote ul li, blockquote ul li svg, blockquote ul li p, .proof blockquote p, .proof blockquote p svg {
+    color: #999;
+}
+
+div.twocols {
+    margin-top: 35px;
+    column-count: 2;
+}
+div.twocols p:first-child, div.twocols h1:first-child, div.twocols, h2:first-child, div.twocols ul:first-child, div.twocols ul li:first-child,div.twocols ul li p:first-child {
+    margin-top: 0 !important;
+}
+div.twocols p.break {
+    break-before: column;
+    margin-top: 0;
+}
+
+proof, ul proof, .proof {
+    background-color: #eee;
+    padding: 15px;
+    border-left: solid;
+    border-color: #a2d2a1;
+    border-width: 10px;
+    border-bottom: solid #ddd 2px;
+    border-top: solid #ddd 2px;
+    border-right: solid #ddd 2px;
+}
+
+proof p, .proof p {
+    color: #666;
+    font-weight: 400
+}
+
+
+center {
+    text-align:center
+}
+
+right, blockquote right {
+    text-align:right
+}
+
+
+answer{
+    color:#faf4ed;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    transition: background-color 1s;
+}
+
+ul li answer svg, ul li blockquote p answer svg{
+    color:#faf4ed;
+}
+
+answer:hover {
+    background-color: #639a2f;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    transition: background-color 1s;
+}
