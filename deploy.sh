@@ -15,9 +15,11 @@ SITE_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # 课件源目录
 MMP_SOURCE="/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/数学物理方法讲义"
+GROUP_THEORY_SOURCE="/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义"
 
 # 目标目录
 MMP_TARGET="$SITE_DIR/courses/mmp"
+GROUP_THEORY_TARGET="$SITE_DIR/courses/group-theory"
 
 echo -e "${YELLOW}开始同步课件...${NC}"
 
@@ -50,6 +52,31 @@ if [ -d "$MMP_SOURCE" ]; then
     echo -e "${GREEN}✓ 数学物理方法同步完成${NC}"
 else
     echo -e "${YELLOW}⚠ 数学物理方法源目录不存在: $MMP_SOURCE${NC}"
+fi
+
+# 同步群论
+if [ -d "$GROUP_THEORY_SOURCE" ]; then
+    echo -e "同步: 群论"
+    mkdir -p "$GROUP_THEORY_TARGET"
+    rsync -av --delete \
+        --exclude='.DS_Store' \
+        --exclude='*.key' \
+        --exclude='*.pptx' \
+        --exclude='*.pdf' \
+        --exclude='*.sty' \
+        --exclude='*.css' \
+        --include='*/' \
+        --include='*.html' \
+        --include='image/**' \
+        --include='images/**' \
+        --include='assets/**' \
+        --include='media/**' \
+        --exclude='*' \
+        --prune-empty-dirs \
+        "$GROUP_THEORY_SOURCE/" "$GROUP_THEORY_TARGET/"
+    echo -e "${GREEN}✓ 群论同步完成${NC}"
+else
+    echo -e "${YELLOW}⚠ 群论源目录不存在: $GROUP_THEORY_SOURCE${NC}"
 fi
 
 echo ""

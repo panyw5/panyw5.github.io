@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/4069589694_4087515083_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1427282918_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_3986563825_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2370301590_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2125238088_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2278705777_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1961705282_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2907715039_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1301601344_1738881944.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_2123997289_3774681670.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/有限群/animations/media/videos/animations/2160p60/partial_movie_files/Legendre/2264664312_1733944848_1280230420.mp4'

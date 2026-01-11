@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/3189633803_755080803_3138395564.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_2874270568_4138814771.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_755080803_850520574.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_2175788394_1012757015.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_755080803_3645476675.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_497420432_2347615763.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_2806092236_781072615.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_3830318352_1331319683.mp4'
+file 'file:/Users/lelouch/Nutstore Files/中大事务/中大教学/课程讲义/群论讲义/李群/media/videos/figures/1080p60/partial_movie_files/PointOnSU2/1154893531_2806092236_2975661514.mp4'
